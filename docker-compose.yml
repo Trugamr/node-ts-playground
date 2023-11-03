@@ -1,0 +1,10 @@
+services:
+  ferretdb:
+    image: ghcr.io/ferretdb/ferretdb
+    restart: on-failure
+    ports:
+      - 27018:27017
+    environment:
+      - FERRETDB_HANDLER=sqlite
+    volumes:
+      - ./db:/state
