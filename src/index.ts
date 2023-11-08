@@ -1,1 +1,1 @@
-console.log('hello')
+import './counting-colored-pixels.js'
